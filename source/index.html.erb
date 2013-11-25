@@ -1,0 +1,67 @@
+<div class="home" id="home">
+  <div class="container">
+    <div class="logo center">
+      <img src="images/logo.png" class="center img-responsive"/>
+    </div>
+    <h1>Hi ! I'm Nicolas Devynck</h1>
+    <h2>A French student developer</h2>
+  </div>
+</div>
+<div class="me" id="me">
+  <div class="container">
+    <h3>What about me ?</h3>
+    <div class="row">
+        <p class="about-me col-md-6">
+          My name is Nicolas Devynck, a 20 years old French IT student.<br />
+          Currently, I study at <a href="http://www.epsi.fr">EPSI</a> which is located in Arras.<br />
+          I'm passionnate about mobile and web developement.
+        </p>
+        <p class="about-me col-md-6">
+          Vice-president of <a href="http://epnet.fr">EPNet</a>, I try to be involved in this association in order to make it known.
+          This association make me more professional thanks to projects that she gives me.
+        </p>
+    </div>
+  </div>
+</div>
+<div class="cv cf" id="timeline">
+  <div class="container">
+    <h3>My Curriculum Vitae</h3>
+    <% data.timeline.year.each do |x, v| %>
+    <div class="year"><%= "#{x}" %></div>
+      <ul class="timeline">
+          <% v.items.each_with_index do |k, j| %>
+          <li class="<%= "#{k.class_name}" %>">
+            <p class="date_event"><%= "#{k.date}" %></p>
+            <a href="<%= "#{ k.href_link }"%>" ><img class="<%= "#{ k.image_class }" %>" src="<%= "#{ k.image }" %>" /></a>
+            <p class="subject"><%= "#{k.subject}" %></p>
+            <div class="<%= "#{ k.pointer_class}"%>"></div>
+            <!-- <div class="<%= "#{ k.pointer_circle }" %> small_circle"></div> -->
+          </li>
+          <% end %>
+      </ul>
+    <% end %>
+    <div class="year">...</div>
+  </div>
+</div>
+<div class="skills" id="skills">
+  <div class="container">
+    <h3>Skills</h3>
+    <% data.skills.each do |x, v| %>
+      <h4><%= "#{x}" %></h4>
+      <% v.items.each_with_index do |k, j| %>
+         <% if j.modulo(3) == 0 %>
+       </ul>
+        <ul class="row">
+         <% end %>
+          <li class="col-md-4 col-sm-4">
+            <div class="language"><%= "#{ k.title }" %></div>
+            <div class="col-md-7 col-sm-7 percent">
+              <div class="loader-full">&nbsp;</div>
+              <div class="loader-fill"><%= "#{ k.percent }" %></div>
+            </div>
+          </li>
+          <% end %>
+      </ul>
+    <% end %>
+  </div>
+</div>

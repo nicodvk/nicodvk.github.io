@@ -1,0 +1,65 @@
+year:
+    2011:
+      items:
+        -
+          class_name: 'item_right'
+          date: 'July'
+          subject:  'Holder of the Scientific A Level graduate.'
+          href_link:  'http://www4.ac-lille.fr/~vincicalais/'
+          image:  'http://www.empreinte-paysage.fr/data/projets/16/1366625399-07418000_f.jpg'
+          image_class: 'img_item_right img-responsive'
+          pointer_class: 'pointer_right'
+          pointer_circle: "right"
+        -
+          class_name: 'item_left'
+          date: 'September'
+          subject:  '1st Year at EPSI'
+          href_link:  'http://www.epsi.fr/'
+          image:  'http://agiletour-montpellier.fr/wp-content/uploads/2013/09/epsi100x100.jpg'
+          image_class: 'img_item_left bd_none img-responsive'
+          pointer_class: 'pointer_left'
+          pointer_circle: "left"
+
+    2012:
+      items:
+        -
+          class_name: 'item_right'
+          date: 'May - June'
+          subject:  'Internship at ReferenceHit in Calais.'
+          href_link:  'http://www.referencehit.com/'
+          image:  'http://www.referencehit.com/images/logo.png'
+          image_class: 'img_item_right bd_none img-responsive'
+          pointer_class: 'pointer_right'
+          pointer_circle: "right"
+        -
+          class_name: 'item_left'
+          date: 'September'
+          subject:  '2nd Year at EPSI.'
+          href_link:  'http://www.epsi.fr/'
+          image:  'http://agiletour-montpellier.fr/wp-content/uploads/2013/09/epsi100x100.jpg'
+          image_class: 'img_item_left bd_none img-responsive'
+          pointer_class: 'pointer_left'
+          pointer_circle: "left"
+
+    2013:
+      items:
+        -
+          class_name: 'item_right'
+          date: 'May-June'
+          subject:  'Internship at Atoo.'
+          href_link:  'http://www.atoo.net/'
+          image:  'http://www.f3cj.fr/img/logo_atoo_agence_internet.png'
+          image_class: 'img_item_right bd_none img-responsive'
+          pointer_class: 'pointer_right'
+          pointer_circle: "right"
+        -
+          class_name: 'item_left'
+          date: 'October'
+          subject:  '3rd Year at EPSI.'
+          href_link:  'http://www.epsi.fr/'
+          image:  'http://agiletour-montpellier.fr/wp-content/uploads/2013/09/epsi100x100.jpg'
+          image_class: 'img_item_left bd_none img-responsive'
+          pointer_class: 'pointer_left'
+          pointer_circle: "left"
+
+

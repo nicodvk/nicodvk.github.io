@@ -1,0 +1,38 @@
+languages:
+    items:
+      -
+        title: "html5"
+        percent: 90
+      -
+        title: "css3"
+        percent: 70
+      -
+        title: "php5"
+        percent: 80
+      -
+        title: "javascript"
+        percent: 70
+      -
+        title: "ruby"
+        percent: 50
+      -
+        title: "C/C++"
+        percent: 75
+      -
+        title: "C#"
+        percent: 75
+      -
+        title: "Java"
+        percent: 60
+
+Frameworks:
+    items:
+      -
+        title: "Symfony 2"
+        percent: 60
+      -
+        title: "Ruby On Rails"
+        percent: 40
+
+
+

@@ -1,0 +1,58 @@
+<footer id="contact">
+    <div class="contact-me">
+      <div class="row">
+        <div class="col-md-2 col-sm-2 social">
+            <div class="row">
+                <a href="mailto:nicolas.devynck@epsi.fr">
+                    <img class="col-md-6 col-sm-6 col-xs-3" src="images/email.png" />
+                </a>
+                <a href="https://github.com/NicoDevynck">
+                    <img class="col-md-6 col-sm-6 col-xs-3" src="images/github.png" />
+                </a>
+                <a href="https://www.facebook.com/nicolas.devynck">
+                    <img class="col-md-6 col-sm-6 col-xs-3" src="images/facebook.png" />
+                </a>
+                <a href="http://www.linkedin.com/profile/view?id=231365813">
+                    <img class="col-md-6 col-sm-6 col-xs-3" src="images/linkedin.png" />
+                </a>
+            </div>
+          <!-- <a href="mailto:nicolas.devynck@epsi.fr">Contact me</a> -->
+        </div>
+        <div id="map" class="col-md-10 col-sm-10 hidden-xs"></div>
+      </div>
+    </div>
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzVUlLsuqLnIlxZ-rnRFvs1MDBwW6wKhc&sensor=true">
+        </script>
+        <script type="text/javascript">
+            function initialize() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(50.7762184,1.9407072999999855),
+                    zoom: 11,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+
+                };
+                var map = new google.maps.Map(document.getElementById("map"),
+                        mapOptions);
+
+                marker = new google.maps.Marker({
+                    map:map,
+                    draggable:true,
+                    animation: google.maps.Animation.DROP,
+                    position: new google.maps.LatLng(50.7762184,1.9407072999999855)
+                });
+
+                google.maps.event.addListener(marker, 'click', toggleBounce);
+
+                function toggleBounce() {
+
+                    if (marker.getAnimation() != null) {
+                        marker.setAnimation(null);
+                    } else {
+                        marker.setAnimation(google.maps.Animation.BOUNCE);
+                    }
+                }
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+</footer>
