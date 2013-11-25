@@ -1,0 +1,19 @@
+@media (max-width:767px) {
+  .nav {
+    height: auto;
+  }
+
+  .navbar-collapse {
+    max-height: none;
+  }
+
+  .navbar-header {
+    float: none;
+    text-align : center;
+  }
+
+  .border-hover {
+    border: none;
+    background: #f39c12;
+  }
+}
